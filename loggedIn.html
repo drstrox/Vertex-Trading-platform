@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groww Dashboard</title>
+    <link rel="stylesheet" href="loggedin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>VERTEX</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="What are you looking for today?">
+                <button onclick="search()">Search</button>
+            </div>
+        </div>
+        <div class="dashboard">
+            <div class="card" id="sp500">
+                <h2>APPLE</h2>
+                <p id="sp500-price">Loading...</p>
+                <p id="sp500-change" style="color: green;">Loading...</p>
+            </div>
+            <div class="card" id="dowjones">
+                <h2>NVIDIA</h2>
+                <p id="dowjones-price">Loading...</p>
+                <p id="dowjones-change" style="color: green;">Loading...</p>
+            </div>
+            <div class="card" id="nasdaq">
+                <h2>GOOGLE</h2>
+                <p id="nasdaq-price">Loading...</p>
+                <p id="nasdaq-change" style="color: green;">Loading...</p>
+            </div>
+        </div>
+        <div class="stock-list">
+            <h2>Searched Stock</h2>
+            <ul id="stockList"></ul>
+        </div>
+        <div class="stock-list">
+            <h2>All Stocks</h2>
+            <ul id="stock_List"></ul>
+        </div>
+        <div class="investments">
+            <h2>Your Investments</h2>
+            <p id="totalReturns">Total Returns: 0</p>
+            <p id="currentValue">Current Value: 0</p>
+        </div>
+    </div>
+    <script src="logginedscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #4caf50;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: rgb(21, 15, 15);
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #b7a9a9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 calc(33% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.card h2 {
+    margin: 0;
+    color: #5f3a3a;
+}
+
+.card p {
+    margin: 10px 0 0;
+}
+
+.investments, .watchlist, .stock-list {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #cda8a8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.investments:hover, .watchlist:hover, .stock-list:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.investments h2, .watchlist h2, .stock-list h2 {
+    margin: 0 0 10px;
+    color: #481616;
+}
+
+.investments p {
+    margin: 5px 0;
+    color: #344635;
+}
+
+.watchlist-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.watchlist-item span {
+    color: #333;
+}
+
+.stock-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.stock-list li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+}
+
+
+
+
+
+
